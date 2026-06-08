@@ -1,0 +1,33 @@
+{
+  "name": "bookapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "live-server",
+    "build": "rollup -c --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdurahman-ter/bookApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdurahman-ter/bookApp/issues"
+  },
+  "homepage": "https://github.com/Abdurahman-ter/bookApp#readme",
+  "dependencies": {
+    "on-change": "^6.0.2",
+    "rollup": "^4.61.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0",
+    "rollup-plugin-import-css": "^4.2.1"
+  }
+}

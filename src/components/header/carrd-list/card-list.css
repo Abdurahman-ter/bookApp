@@ -1,0 +1,17 @@
+.card__title {
+    font-size: 24px;
+}
+
+.card__togle {
+    margin-left: 50%;
+}
+
+.un-visible {
+    display: none;
+}
+
+.card__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
