@@ -45,6 +45,7 @@ export class Favorites extends DivComponent {
           (book) => book.key == card.key,
         );
         this.appState.favorites.splice(index, 1);
+        localStorage.setItem("favorites", JSON.stringify(this.appState.favorites));
       });
 
       favoritesGrid.append(favoritesCard);
