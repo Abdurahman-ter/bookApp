@@ -47,12 +47,14 @@ export class Card extends DivComponent {
           (book) => book.key == this.cardState.key,
         );
         this.appState.favorites.splice(index, 1);
+        localStorage.setItem("favorites", JSON.stringify(this.appState.favorites));
         this.el
           .querySelector(".button__add")
           .classList.remove("button__active");
         return;
       }
       this.appState.favorites.push(this.cardState);
+      localStorage.setItem("favorites", JSON.stringify(this.appState.favorites));
       this.el.querySelector(".button__add").classList.add("button__active");
     });
 
